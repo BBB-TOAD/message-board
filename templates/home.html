@@ -1,0 +1,14 @@
+<!-- templates/home.html -->
+<Doctype! html>
+    <header>
+        <title>Messages App by Andy Bae</title>
+    </header>
+
+    <body>
+        <h1>Message Board Homepage</h1>
+        <ul>
+            {% for post in post_list %}
+            <li>{{ post.text }}</li>
+            {% endfor %}
+        </ul>
+    </body>
